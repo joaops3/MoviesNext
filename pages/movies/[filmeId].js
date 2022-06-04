@@ -30,7 +30,7 @@ export async function getServerSideProps(context){
 
 
 
-const filmeId = ({movie}) => {
+const FilmeId = ({movie}) => {
 
     const [trailerUrl, setTrailer] = useState(null)
     const [genresName] = movie.genres
@@ -56,7 +56,7 @@ const filmeId = ({movie}) => {
        
         <div className={styles.containerFilme}>
             <h1>{movie.title}</h1> 
-            <div><img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} width="300px"></img></div>
+            <div><img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} width="300px" alt="movie poster"></img></div>
             <div className={styles.filmeText}>
                <div className={styles.textItem}> Nota: {movie.vote_average},</div>
                <div className={styles.textItem}> Genero: {genresName.name},</div>
@@ -82,4 +82,4 @@ const filmeId = ({movie}) => {
     );
 }
  
-export default filmeId;
+export default FilmeId;

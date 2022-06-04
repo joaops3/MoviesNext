@@ -37,7 +37,7 @@ export default function series({movies, moviesTop}) {
           <div className={styles.containerNav}>
             {movies.map(movie => {
               return <div key={movie.id}>
-                <Link href={`/series/${movie.id.toString()}`}><img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} width="250px" /></Link>
+                <Link href={`/series/${movie.id.toString()}`}><img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} width="250px"  alt="movie poster"/></Link>
                 </div>})}
           </div>
       </main>
@@ -48,7 +48,7 @@ export default function series({movies, moviesTop}) {
           <div className={styles.containerNav}>
             {moviesTop.map(movie => {
               return <div key={movie.id}>
-                <Link href={`/series/${movie.id.toString()}`}><img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} width="250px" /></Link>
+                <Link href={`/series/${movie.id.toString()}`}><img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} width="250px"  alt="movie poster" /></Link>
                 <div>Nota: {movie.vote_average}</div>
                 </div>})}
                

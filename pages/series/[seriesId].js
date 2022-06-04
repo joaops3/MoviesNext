@@ -19,7 +19,7 @@ export async function getServerSideProps(context){
 }
 
 
-const seriesId = ({movie}) => {
+const SeriesId = ({movie}) => {
     const [trailerUrl, setTrailer] = useState(null)
     const [genresName] = movie.genres
     const [production] = movie.production_countries
@@ -45,4 +45,4 @@ const seriesId = ({movie}) => {
     );
 }
  
-export default seriesId;
+export default SeriesId;

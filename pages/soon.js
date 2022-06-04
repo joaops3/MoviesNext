@@ -37,7 +37,7 @@ export default function soon({movies}) {
           <div className={styles.containerNav}>
             {movies.map(movie => {
               return <div key={movie.id}>
-                <Link href={`/movies/${movie.id.toString()}`}><img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} width="250px" /></Link>
+                <Link href={`/movies/${movie.id.toString()}`}><img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} width="250px"  alt="movie soon"/></Link>
                 </div>})}
           </div>
       </main>

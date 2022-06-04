@@ -1,4 +1,4 @@
-import { API_KEY } from './api/key'
+import { API_KEY } from './key'
 
 export default async function handler(req, res) {
 

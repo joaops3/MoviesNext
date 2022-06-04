@@ -1,5 +1,5 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import { API_KEY } from './api/key'
+import { API_KEY } from './key'
 
 
 

@@ -22,7 +22,7 @@ const pesquisarId = ({movies, name}) => {
           <div className={styles.containerNav}>
             {movies.map(movie => {
               return <div key={movie.id}>
-                <Link href={`/movies/${movie.id}`}><img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} width="250px" /></Link></div>})}
+                <Link href={`/movies/${movie.id}`}><img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} width="250px"  alt="movie poster" /></Link></div>})}
           </div>
       </main>
       
