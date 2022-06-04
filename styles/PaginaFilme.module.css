@@ -1,0 +1,49 @@
+.containerFilme{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: #2B2B2B;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.filmeText{
+    color: white;
+    padding: 25px 15px;
+    display: flex;
+    text-align: left;
+    width: 100%;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+.textItem{
+    margin: 0 5px;}
+
+.textItemOver, .textItemTrailer{
+        margin: 0 5px;
+        padding-top: 10px;
+    }
+
+ .textItemTrailer{ 
+    cursor: pointer;
+}
+.textItemTrailer:hover{ 
+    text-decoration: underline #DCA629;
+}
+
+
+.column{
+    width: 100%;
+    display: flex; 
+    flex-direction: column;}
+
+.video{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}

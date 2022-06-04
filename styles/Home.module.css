@@ -1,0 +1,27 @@
+.main{
+    margin: 0 auto;
+    width: 85%;
+}
+
+.containerNav {
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.containerNav div{
+    margin: 10px;
+}
+
+.containerNav div img:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    outline: 1px double white;
+    
+}
+
+.containerNav div{color: #fff;}
+
+
