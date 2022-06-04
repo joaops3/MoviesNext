@@ -4,9 +4,10 @@ import styles from '../styles/Home.module.css'
 import Header from './components/Header'
 import Link from "next/Link"
 import { useState } from 'react'
+import { API_KEY } from './api/key'
 
 
-const API_KEY= "53e49a3f63f347af01773560db28ed78"
+
 
 "https://localhost:3000/api/filmes"
 
@@ -17,7 +18,7 @@ export async function getServerSideProps(){
   const responseTrending = await fetch(`http://api.themoviedb.org/3/trending/movie/week?api_key=${API_KEY}`)
   const jsonTrending = await responseTrending.json()
 
-  const responseTop = await fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=53e49a3f63f347af01773560db28ed78&language=en-US&page=1`)
+  const responseTop = await fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}&language=en-US&page=1`)
   const jsonTop = await responseTop.json()
 
   return {props: {movies: jsonTrending.results, moviesTop: jsonTop.results }}

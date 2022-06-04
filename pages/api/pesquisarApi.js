@@ -1,4 +1,4 @@
-const API_KEY= "53e49a3f63f347af01773560db28ed78"
+import { API_KEY } from './api/key'
 
 export default async function handler(req, res) {
 

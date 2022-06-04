@@ -1,6 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import { API_KEY } from './api/key'
 
-const API_KEY= "53e49a3f63f347af01773560db28ed78"
+
 
 export default async function handler(req, res) {
 

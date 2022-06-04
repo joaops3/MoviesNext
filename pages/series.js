@@ -6,7 +6,6 @@ import Link from "next/Link"
 import { useState } from 'react'
 
 
-const API_KEY= "53e49a3f63f347af01773560db28ed78"
 
 export async function getServerSideProps(){
 

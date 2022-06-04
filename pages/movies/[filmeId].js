@@ -5,15 +5,12 @@ import styles from "../../styles/PaginaFilme.module.css"
 import ReactPlayer from 'react-player'
 import { useState } from "react"
 
-const API_KEY= "53e49a3f63f347af01773560db28ed78"
+
 
 
 
 export async function getServerSideProps(context){
     
-    "http://localhost:3000/api/expecifico/${params.filmeId}"
-    
-     "https://api.themoviedb.org/3/movie/${params.filmeId}?api_key=53e49a3f63f347af01773560db28ed78&language=pt-BR"
     
     const {params} = context
     const response = await fetch(`https://api.themoviedb.org/3/movie/${params.filmeId}?api_key=53e49a3f63f347af01773560db28ed78&language=pt-BR`)

@@ -1,7 +1,7 @@
 import Link from "next/link"
 import styles from '../../styles/Home.module.css'
 
-const API_KEY= "53e49a3f63f347af01773560db28ed78"
+import { API_KEY } from '../api/key'
 
 export async function getServerSideProps(context){
    
