@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Header from './components/Header'
-import Link from "next/Link"
+import Link from "next/link"
 import { useState } from 'react'
 import { API_KEY } from './api/key'
 
