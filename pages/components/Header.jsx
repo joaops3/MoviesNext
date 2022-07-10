@@ -22,7 +22,7 @@ const Header = () => {
     return ( 
     <header>
         <nav className={styles.nav}>
-        <div className={styles.img}><Link href="/"><Image src="/images/next.png" width={"30px"} height="30px"></Image></Link>
+        <div className={styles.img}><Link href="/"><Image src="/images/Logo.svg" width={"40px"} height="40px"></Image></Link>
           
         </div>
         <div className={styles.link}>

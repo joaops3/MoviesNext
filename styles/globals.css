@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Nunito:wght@300&family=Roboto:wght@400;700&display=swap');
+
 html,
 body {
   padding: 0;
@@ -20,6 +23,7 @@ a {
 h1{text-align: center;
   color: white;
   font-weight: bold;
+  font-family: 'Cinzel', serif;
 }
 
 h1{margin-top: 70px;}

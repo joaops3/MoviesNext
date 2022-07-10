@@ -9,7 +9,7 @@ import { API_KEY } from './api/key'
 
 
 
-"https://localhost:3000/api/filmes"
+
 
 export async function getServerSideProps(){
 

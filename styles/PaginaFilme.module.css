@@ -17,15 +17,21 @@
     width: 100%;
     flex-wrap: wrap;
     font-size: 20px;
+ 
+    
 }
 
 .textItem{
-    margin: 0 5px;}
+    margin: 0 5px; font-family: 'Cinzel', serif;}
 
 .textItemOver, .textItemTrailer{
         margin: 0 5px;
         padding-top: 10px;
     }
+    .textItemOver{
+        font-family: 'Nunito', sans-serif;
+    }
+   
 
  .textItemTrailer{ 
     cursor: pointer;
@@ -42,7 +48,6 @@
 
 .video{
     display: flex;
-
     align-items: center;
     justify-content: center;
     padding: 10px;

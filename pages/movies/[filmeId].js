@@ -4,6 +4,7 @@ import Footer from "../components/Footer"
 import styles from "../../styles/PaginaFilme.module.css"
 import ReactPlayer from 'react-player'
 import { useState } from "react"
+import { API_KEY } from "../api/key"
 
 
 
@@ -13,7 +14,7 @@ export async function getServerSideProps(context){
     
     
     const {params} = context
-    const response = await fetch(`https://api.themoviedb.org/3/movie/${params.filmeId}?api_key=53e49a3f63f347af01773560db28ed78&language=pt-BR`)
+    const response = await fetch(`https://api.themoviedb.org/3/movie/${params.filmeId}?api_key=${API_KEY}&language=pt-BR`)
     const json = await response.json()
     return {props: {movie: json}}
 }
@@ -39,7 +40,7 @@ const FilmeId = ({movie}) => {
 
 
     const handleTrailer= async (id) =>{
-        const response = await fetch(`https://api.themoviedb.org/3/movie/${id}/videos?api_key=53e49a3f63f347af01773560db28ed78&language=en-US`)
+        const response = await fetch(`https://api.themoviedb.org/3/movie/${id}/videos?api_key=${API_KEY}&language=en-US`)
         const data = await response.json()
 
         for(let trailer of data.results){

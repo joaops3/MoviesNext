@@ -2,7 +2,7 @@ import { API_KEY } from './key'
 
 export default async function handler(req, res) {
 
-  const query = req.query.pesquisar
+  const query = req.query.pesquisar //nome do arquivo [pesquisar]
 
   const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&language=pt-BR&query=${query}`)
   const json = await response.json()

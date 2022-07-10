@@ -4,14 +4,14 @@ import styles from '../styles/Home.module.css'
 import Header from './components/Header'
 import Link from "next/link"
 import { useState } from 'react'
-
+import { API_KEY } from "./api/key"
 
 
 export async function getServerSideProps(){
 
  
 
-  const responseTrending = await fetch(`https://api.themoviedb.org/3/movie/upcoming?api_key=53e49a3f63f347af01773560db28ed78&language=en-US&page=1`)
+  const responseTrending = await fetch(`https://api.themoviedb.org/3/movie/upcoming?api_key=${API_KEY}&language=en-US&page=1`)
   const jsonTrending = await responseTrending.json()
 
 
