@@ -1,12 +1,12 @@
-import '../styles/globals.css'
-import MainContainer from './components/MainContainer'
+import "../styles/globals.css";
+import MainContainer from "./components/MainContainer";
 
 function MyApp({ Component, pageProps }) {
   return (
-  <MainContainer>
-    <Component {...pageProps}/>
-  </MainContainer>
-  )
+    <MainContainer>
+      <Component {...pageProps} />
+    </MainContainer>
+  );
 }
 
-export default MyApp
+export default MyApp;
