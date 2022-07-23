@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import styles from "../../styles/PaginaFilme.module.css";
 import ReactPlayer from "react-player";
 import { useState } from "react";
-import { API_KEY } from "../api/key";
+import { API_KEY} from "../api/key";
 
 export async function getServerSideProps(context) {
   const { params } = context;
@@ -31,11 +31,12 @@ const FilmeId = ({ movie }) => {
   const id = movie.id;
 
   const handleTrailer = async (id) => {
+
     const response = await fetch(
-      `https://api.themoviedb.org/3/movie/${id}/videos?api_key=${API_KEY}&language=en-US`
+      `https://api.themoviedb.org/3/movie/${id}/videos?api_key=${process.env.NEXT_PUBLIC_APIKEY}&language=en-US`
     );
     const data = await response.json();
-
+    console.log(data)
     for (let trailer of data.results) {
       if (trailer.name === "Official Trailer") {
         setTrailer(trailer.key);
